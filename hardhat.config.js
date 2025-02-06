@@ -2,8 +2,7 @@
  * @type import('hardhat/config').HardhatUserConfig
  */
 
-require('@nomicfoundation/hardhat-ethers');
-require("@nomicfoundation/hardhat-chai-matchers");
+require('@nomicfoundation/hardhat-toolbox');
 require("dotenv").config({path: ".env"})
 
 const PrivateKey = process.env.PrivateKey;

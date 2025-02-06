@@ -15,8 +15,4 @@ contract SimpleCounter {
     function subtractCounter() public {
         counter--;
     }
-
-    function checkCounter() public view returns (bool) {
-        return counter == 0;
-    }
 }
