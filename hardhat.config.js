@@ -6,7 +6,7 @@ require('@nomicfoundation/hardhat-toolbox');
 require("dotenv").config({path: ".env"})
 
 const PrivateKey = process.env.PrivateKey;
-const ApiKey = process.env.ApiKey;
+const Url = process.env.ApiKey;
 
 module.exports = {
    defaultNetwork: 'testnet',
@@ -15,7 +15,7 @@ module.exports = {
       hardhat: {
       },
       testnet: {
-         url: ApiKey,
+         url: Url,
          accounts: [PrivateKey],
          chainId: 1114,
       }
